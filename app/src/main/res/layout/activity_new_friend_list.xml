@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_friend_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.jayantxie.activity.NewFriendListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/new_friend_list_top_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_back"
+            android:layout_marginStart="7dp"
+            android:layout_gravity="start|center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新的好友请求"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="start|center_vertical"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/new_friend_list_view"/>
+
+</RelativeLayout>

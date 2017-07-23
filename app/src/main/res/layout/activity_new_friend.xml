@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_friend"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jayantxie.activity.NewFriendActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#444444"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/new_friend_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_back"
+            android:layout_marginStart="7dp"
+            android:layout_gravity="start|center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详细资料"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="start|center_vertical"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/f_basic_info"
+        android:layout_marginTop="80dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#FFFFFF">
+        <ImageView
+            android:id="@+id/f_head_pic"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/head_pic"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"/>
+
+
+        <TextView
+            android:id="@+id/f_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="150dp"
+            android:text="未显示"
+            android:textColor="@color/dark"
+            android:textSize="10pt"/>
+
+        <TextView
+            android:id="@+id/f_name"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="160dp"
+            android:text="未显示"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/add_this_friend"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:background="#00AA00"
+        android:textColor="@android:color/white"
+        android:textSize="7pt"
+        android:gravity="center"
+        android:text="添加好友"
+        android:layout_below="@+id/f_basic_info"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/see_friend_info"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:background="#00AA00"
+        android:textColor="@android:color/white"
+        android:textSize="7pt"
+        android:gravity="center"
+        android:text="查看好友个人空间"
+        android:layout_below="@+id/f_basic_info"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/wait_for_confirm"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:background="#00AA00"
+        android:textColor="@android:color/white"
+        android:textSize="7pt"
+        android:gravity="center"
+        android:text="待确认好友申请"
+        android:layout_below="@+id/f_basic_info"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

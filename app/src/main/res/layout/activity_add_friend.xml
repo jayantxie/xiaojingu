@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_friend"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="#F5F5F5"
+    tools:context="com.jayantxie.activity.AddFriendActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#444444"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/add_friend_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_back"
+            android:layout_marginStart="7dp"
+            android:layout_gravity="start|center_vertical"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加朋友"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"
+            android:layout_gravity="start|center_vertical"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/white"
+        android:layout_marginTop="80dp"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/search_img"
+            android:layout_marginStart="7dp"
+            android:layout_gravity="start|center_vertical"/>
+
+        <EditText
+            android:id="@+id/search_friend_text"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@color/dark"
+            android:imeOptions="actionSearch"
+            android:inputType="textEmailAddress"
+            android:hint="输入好友账号（邮箱）"
+            android:textSize="8pt"
+            android:layout_gravity="start|center_vertical"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/search_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleLargeInverse"
+        android:layout_gravity="top|center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/progress_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查找中..."
+        android:textColor="@color/dark"
+        android:textSize="13sp"
+        android:layout_gravity="top|center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

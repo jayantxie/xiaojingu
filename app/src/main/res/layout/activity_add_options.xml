@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="46dp"
+        android:background="@drawable/title_function_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/add_friend"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:drawableLeft="@drawable/mm_title_btn_compose_normal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="添加好友"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/release_learning_log"
+            android:layout_width="fill_parent"
+            android:gravity="center"
+            android:layout_height="40dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/mm_title_btn_keyboard_normal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="发布学习日志"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</RelativeLayout>

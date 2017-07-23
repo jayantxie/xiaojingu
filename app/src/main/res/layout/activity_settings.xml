@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp">
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/grey"/>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/relaxTime"
+                    android:textColor="@color/grey" />
+
+                <EditText
+                    android:id="@+id/relax_time"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:hint="minutes 0~60"
+                    android:textSize="13dp"
+                    android:textColor="#444444"
+                    android:inputType="number"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="0dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/relaxTimes"
+                    android:textColor="@color/grey" />
+
+                <EditText
+                    android:id="@+id/relax_times"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:textSize="13dp"
+                    android:hint="1~5"
+                    android:textColor="#444444"
+                    android:inputType="number"/>
+            </LinearLayout>
+
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/done_settings"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@color/grey"
+                android:text="@string/done"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:visibility="visible"/>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

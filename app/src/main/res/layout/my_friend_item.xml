@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/my_friend_item"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:paddingTop="3dip"
+    android:background="#FFFFFF">
+
+
+    <ImageView
+        android:id="@+id/my_friend_head_pic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/head_pic"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="10dp"/>
+
+
+    <TextView
+        android:id="@+id/my_friend_name"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="200dp"
+        android:text="未显示"/>
+
+    <TextView
+        android:id="@+id/my_friend_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="170dp"
+        android:text="未显示"
+        android:textColor="@color/dark"
+        android:textSize="8pt"/>
+
+</FrameLayout>

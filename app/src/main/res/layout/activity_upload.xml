@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp">
+
+
+        <TextView
+            android:id="@+id/upload_state"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/hip"
+            android:textSize="10pt"
+            android:textColor="#444444" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/finish_button"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="@color/grey"
+                android:text="完成"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:visibility="visible"/>
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
